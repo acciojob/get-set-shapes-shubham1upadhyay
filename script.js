@@ -19,11 +19,11 @@ class Rectangle {
 
 class Square extends Rectangle {
 	getPerimeter(){
-    return 4 * this.Width;	
+    return 4 * this.width;	
   }
 }
-let s = Square(4);
-console.log(s.getPerimeter());
+// let s = new Square(4);
+// console.log(s.getPerimeter());
 // Do not change the code below this line
 window.Rectangle = Rectangle;
 window.Square = Square;

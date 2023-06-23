@@ -6,28 +6,20 @@ class Rectangle {
 		this._width = width;
 		this._height = height;
 	}
-	setWidth(w){
-		this._width = w;
-	}
-	getWidth(){
+	get width(){
 		return this._width;
 	}
-	setHeight(h){
-		this._height = h;
-	}
-	getHeight(){
+	get height(){
 		return this._height;
 	}
-
-	getArea()
-	{
+	getArea(){
 		return this._width * this._height;
 	}
 }
 
-class Square extends Animal {
+class Square extends Rectangle {
 	getPerimeter(){
-    let a = this.getWidth();
+    let a = this._Width;
     return 4 * a;
   }
 }
